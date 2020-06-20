@@ -1,75 +1,69 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-
-    <title>The Grid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <div class="container">
-        
-        <div class="row border">
-            <div class="col-sm-6">
-<h1>IIAKD</h1>
-LOREM IPSUM held on September 17, 2018.</div>
-            <div class="col-sm-6 bg-warning m-0">
-                   <label for="pet-select">IIAKD</label>
-<form>
-    <select id="pet-select">
+
+<div class="row">
+  <div class="column" class="cen">
+      <h1 style="text-align: center;">IIAKD</h1>
+<p style="text-align: center;" >LOREM IPSUM held on <br><span style="font-weight: bold;"> September 17, 2018.</span> </p>
+     
+    
+</div>
+
+  <div class="column" style="background-color:  #FFFFFF;">
+  <label for>IIAKD</label>
+  <form id="cen">
+    <select class="rounded">
     <option value="">--Please choose an option--</option>
     <option value="dog">IIAKD</option>
     <option value="cat">STUDENT</option>
 </select><br>
   <label>IIAKD Number*:</label><br>
-  <input type="text"><br>
+  <input type="text" class="rounded"><br>
   <label>Name*:</label><br>
-  <input type="text"><br>
+  <input type="text" class="rounded"><br>
   <label>Phone number*:</label><br>
-  <input type="text"><br>
+  <input type="text" class="rounded"><br>
   <label>Email*:</label><br>
-  <input type="number"><br>
+  <input type="number" class="rounded"><br>
    <label>Attach FIle*:</label><br>
-    <div class="row border">
-   <input type="file" tabindex="-1"  required="" >
+    <div>
+   <label for="upload-photo" id="attach"><img src="C:\Users\Shreya\Downloads\attach.png" height="30px" width="30px">
+    <br>For Students-Valid Docs</label>
+   <input type="file" tabindex="-1" required=""  name="photo" id="upload-file" />
 </div>
-<div><input type="checkbox"  value="I accept" required="" class="">
+<div><input type="checkbox"  value="I accept" required="">
             <label >I accept<span title="Required field" class="required-mark">*</span></label>
-            </div>
-            <button type="submit" ><span>Register</span></button>
-</form>
+            </div> 
+            <button type="submit"  class="ro"><span>Register</span></button>
+  </form>
             </div>
         </div>
         
     </div>
-    <div class="bg-success m-0">
+  
+ </div>
+</div>
+
+    <div>
+    <div style="background-color:  #FFFFFF;">
             <h2>What Is IIAKD?</h2>
 The Indian Institute of Architects (IIA) is the National body of Architects in the country. Established in 1917, the institute today has more than 20,000 members and plays a major role in promoting the profession of architecture by organising and uniting the Architects of India to promote aesthetic, scientific and practical efficiency of the profession both in Practice and in Education.
 
 IIA is represented on various national and international committees connected with architecture, art and the building industry and is also actively associated with International Union of Architects (UIA) Commonwealth Association of Architects (CAA) and South Asian Association for Regional Co-operation of Architects (SAARCH).
         </div>
-    <div class="bg-danger m-0">
+    <div style="background-color:black; color: white;">
             <h2>BOTTOM DIV</h2>
 The Indian Institute of Architects (IIA) is the National body of Architects in the country. Established in 1917, the institute today has more than 20,000 members and plays a major role in promoting the profession of architecture by organising and uniting the Architects of India to promote aesthetic, scientific and practical efficiency of the profession both in Practice and in Education.
 
 IIA is represented on various national and international committees connected with architecture, art and the building industry and is also actively associated with International Union of Architects (UIA) Commonwealth Association of Architects (CAA) and South Asian Association for Regional Co-operation of Architects (SAARCH).
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+  </div>
 </body>
-
 </html>
