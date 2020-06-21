@@ -2,7 +2,7 @@
 #attach{
    cursor: pointer;
     height: 100px;
-	width: 600px;
+	width: 500px;
 	border: 1px dashed;
 	display: inline-block;
 	text-align: center;
@@ -29,6 +29,20 @@ button.ro {
   cursor:pointer;
   margin:1em;
   width: 500px;
+}
+.pad h2, p{
+	display: inline-block;
+    text-decoration: none;
+    font-size: 1.8em;
+    margin-top: 90px;
+}
+#bc{
+	background-color: black;
+	color: white;
+}
+#wc{
+	background-color:#FFF; 
+	margin-bottom: 0px;
 }
 input.rounded {
 
@@ -57,17 +71,36 @@ body{
 
 /* Create two equal columns that floats next to each other */
 .column {
+  text-align: center;
   float: left;
-  width: 45%;
+  width: 40%;
   padding: 10px;
-  height: 500px; 
+  height: 70%; 
 }
-
+.row{
+	margin: 25px 10px 75px;
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
+   
+  
 }
-p{
-	
+label{
+	text-align: left;
+}
+form{
+	padding:10px;
+}
+select {
+    width: auto;
+    height: 30px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    -khtml-border-radius: 40px;
+    text-indent: 7px;
+    overflow: hidden;
+    outline: 0;
 }
