@@ -1,106 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+ <script src="https://kit.fontawesome.com/1da4c10f4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-#attach{
-   cursor: pointer;
-    height: 100px;
-	width: 500px;
-	border: 1px dashed;
-	display: inline-block;
-	text-align: center;
-   
-}
+<div class="row">
+  <div class="column">
+      <h1>IIAKD</h1>
+      <p>LOREM IPSUM held on <br><span style="font-weight: bold;"> September 17, 2018.</span> </p>
+     
+    
+  </div>
 
-#upload-file {
-   opacity: 0;
-   position: absolute;
-   z-index: -1;
-}
-
-.cen{
-	align-items: center;
-	border-radius: 40px;
-}
-button.ro {
-  padding:0.6em 2em;
-  border-radius:20em;	
-  color:#fff;
-  background-color:black;
-  font-size:1.1em;
-  border:0;
-  cursor:pointer;
-  margin:1em;
-  width: 500px;
-}
-.pad h2, p{
-	display: inline-block;
-    text-decoration: none;
-    font-size: 1.8em;
-    margin-top: 90px;
-}
-#bc{
-	background-color: black;
-	color: white;
-}
-#wc{
-	background-color:#FFF; 
-	margin-bottom: 0px;
-}
-input.rounded {
-
-  border: 1px solid #ccc;
-border-radius:20em;	
-      font-size: 20px;
-  padding: 4px 7px;
-    outline: 0;
-    width: 500px;
-  -webkit-appearance: none;
+  <div class="column" style="background-color: white;">
+  <label for>IIAKD</label>
+  <form >
+    <select class="rounded">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">IIAKD</option>
+    <option value="cat">STUDENT</option>
+   </select><br>
+  <label>IIAKD Number*:</label><br>
+  <input type="text" class="rounded"><br>
+  <label>Name*:</label><br>
+  <input type="text" class="rounded"><br>
+  <label>Phone number*:</label><br>
+  <input type="text" class="rounded"><br>
+  <label>Email*:</label><br>
+  <input type="number" class="rounded"><br>
+   <label>Attach FIle*:</label><br>
+  <div>
+   <label for="upload-photo" id="attach"><i class="fas fa-paperclip fa-3x"></i>
+    <br>For Students-Valid Docs</label>
+   <input type="file" tabindex="-1" required=""  name="photo" id="upload-file" />
+  </div>
+<div><input type="checkbox"  value="I accept" required="">
+            <label >I accept<span title="Required field" class="required-mark">*</span></label>
+            </div> 
+            <button type="submit"  class="ro"><span>Register</span></button>
+  </form>
+            </div>
+        </div>
+        
+    </div>
   
-}
+ </div>
+</div>
 
-input.rounded:focus {
-  border-color: #339933;
-  
-}
-body{
-	background-color: 	#D3D3D3; 
-    padding: 0;
-    margin: 0;       
- }
-* {
-  box-sizing: border-box;
-}
+    <section class="pad">
+          <div id="wc">
+                <h2>What Is IIAKD?</h2>
+                <p>The Indian Institute of Architects (IIA) is the National body of Architects in the country. Established in 1917, the institute today has more than 20,000 members and plays a major role in promoting the profession of architecture by organising and uniting the Architects of India to promote aesthetic, scientific and practical efficiency of the profession both in Practice and in Education.
 
-/* Create two equal columns that floats next to each other */
-.column {
-  text-align: center;
-  float: left;
-  width: 40%;
-  padding: 10px;
-  height: 70%; 
-}
-.row{
-	margin: 25px 10px 75px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-   
-  
-}
-label{
-	text-align: left;
-}
-form{
-	padding:10px;
-}
-select {
-    width: auto;
-    height: 30px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    border-radius: 40px;
-    -khtml-border-radius: 40px;
-    text-indent: 7px;
-    overflow: hidden;
-    outline: 0;
-}
+                IIA is represented on various national and international committees connected with architecture, art and the building industry and is also actively associated with International Union of Architects (UIA) Commonwealth Association of Architects (CAA) and South Asian Association for Regional Co-operation of Architects (SAARCH).</p>
+                <i class="fab fa-facebook-f fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-youtube fa-2x"></i>
+                <i class="fab fa-slack-hash fa-2x"></i>
+                <i class="fab fa-telegram-plane fa-2x"></i><br>
+                <button type="submit"  class="ro" style="width: 300px"><span>Learn More</span></button>
+         </div><div id="bc">
+               <h2>BOTTOM DIV</h2>
+               <h3> This site prototype was created with Draftium</h3>
+                  <h4>Create your own prototype for free.</h4>
+        </div>
+  </section>
+</body>
+</html>
+
+
+        
+
+
