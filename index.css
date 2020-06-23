@@ -1,69 +1,58 @@
-#attach {
-  cursor: pointer;
-  height: 100px;
-  width: 400px;
-  border: 1px dashed;
-  display: inline-block;
-  text-align: center;
+body{
+  background-color:#D8D8D8;
+  color: #434343;
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns:1fr 1fr;
+    grid-template-rows: 4fr 3fr 3fr;
+    grid-template-areas: 
+    "div1 div2"
+    "ab ab"
+    "footer footer";
+
+}
+#div1{
+  grid-area: div1;
+  margin-top:50px;
+  padding-top:200px;
+  text-align:center;
+  
+}
+#div2{
+  background:white;
+  grid-area: div2;
+  padding-top:50px;
+  margin-top:50px;
+  margin-right:70px;
+  margin-left:70px;
+  text-align:center;
+  
+
+
+
 }
 
-#upload-file {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
+form div {
+  text-align: left;
+  padding:20px 100px 0px;
+  font-size:16px;
 }
-
-.cen {
-  align-items: center;
+select {
+  border:0px;
+  width: 410px;
+  height: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
   border-radius: 40px;
-}
-button.ro {
-  padding: 0.6em 2em;
-  border-radius: 20em;
-  color: #fff;
-  background-color: black;
-  font-size: 1.1em;
-  border: 0;
-  cursor: pointer;
-  margin: 1em;
-  width: 350px;
-}
-.pad span,
-p,
-h3,
-h2,
-span {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.8em;
-  margin-top: 0px;
-}
-#bc {
-  background-color: black;
-  color: white;
+  --khtml-border-radius: 40px;
+  text-indent: 7px;
+  overflow: hidden;
+  outline: 0;
   text-align: center;
-  margin-bottom: 0px;
-  font-family: "Roboto", sans-serif;
-}
-#bc h1,
-p {
-  font-size: 16px;
-}
-#wc {
-  background-color: #fff;
-  height: 700px;
-  margin-bottom: 0px;
-  padding-left: 300px;
-  padding-top: 100px;
-  padding-right: 500px;
-}
-#s1 {
-  height: 700px;
-  margin-bottom: 0px;
-  padding-left: 250px;
-  padding-top: 100px;
-  padding-right: 500px;
-  text-align: center;
+  background-color: rgba(103, 103, 103, 0.2);
 }
 input.rounded {
   border-radius: 20em;
@@ -80,70 +69,57 @@ input.rounded {
 input.rounded:focus {
   border-color: #339933;
 }
-body {
-  background-color: #d3d3d3;
-  padding: 0;
-  margin: 0;
-  color: #434343;
-  font-family: "Montserrat", sans-serif;
-}
-h1 {
-  font-family: "Montserrat", sans-serif;
-}
-* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
+#attach {
+  cursor: pointer;
+  height: 100px;
+  width: 200px;
+  border: 1px dashed;
+  display: inline-block;
   text-align: center;
-  float: left;
-  width: 40%;
-  padding: 10px;
-  height: 70%;
 }
-.row {
-  margin: 25px 10px 75px;
-  padding-left: 0px;
-  padding-top: 100px;
-  padding-right: 0px;
-  align-items: center;
+#upload-file {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+button.ro {
+  padding: 0.6em 2em;
+  border-radius: 20em;
+  color: #fff;
+  background-color: black;
+  font-size: 1.1em;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 1em;
+  width: 350px;
 }
-label {
-  text-align: left;
-  padding: 10px;
-}
-form {
-  padding: 10px;
-  font-size: 16px;
+#ab{
+  background:white;
+  grid-area: ab;
+  margin-top:60px;
+  height: 700px;
   margin-bottom: 0px;
-  padding-left: 100px;
-  padding-top: 75px;
-  padding-right: 500px;
-  text-align: left;
+  padding-left: 200px;
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-bottom:0px;
 }
-form div {
-  text-align: left;
+#footer{
+  color: white;
+  background:black;
+  grid-area: footer;
+  text-align:center;
+  padding: 40px 15px;
+  
 }
-select {
-  width: 400px;
-  height: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  --khtml-border-radius: 40px;
-  text-indent: 7px;
-  overflow: hidden;
-  outline: 0;
-  text-align: center;
-  background-color: rgba(103, 103, 103, 0.2);
-  border: 0px;
-}
-#s2 {
-  text-align: center;
+@media only screen and (max-width: 1000px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.5fr 4fr 2.5fr 2fr;
+    grid-template-areas: 
+    "div1"
+    "div2"
+    "ab"
+    "footer"; 
+  }
 }
